@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+
+    <div class="row-fluid">
+        <div class="col-md-2">
+           {{ wtf.quick_form(form)}}
+        </div>
+        <div class="col-md-10">
+            <div class="row-fluid">
+                <table class='table' id='example'>
+		            <thead>
+                        <tr>
+                            <th>Org</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>User Name</th>
+                            <th>Created</th>
+                            <th>Status</th>
+                            <th>Modified</th>
+                            <th>Logins</th>
+                            <th>Fast Search</th>
+                            <th>Power Search</th>
+                            <th>Virtual Chart</th>
+                        </tr>
+		            </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Org</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>User Name</th>
+                            <th>Created</th>
+                            <th>Status</th>
+                            <th>Modified</th>
+                            <th>Logins</th>
+                            <th>Fast Search</th>
+                            <th>Power Search</th>
+                            <th>Virtual Chart</th>
+                        </tr>
+                    </tfoot>
+	            </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
